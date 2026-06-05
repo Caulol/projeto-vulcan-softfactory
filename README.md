@@ -23,11 +23,11 @@ O robô executa operações automatizadas de montagem e possui:
 
 # Tecnologias, Linguagens e Ferramentas Utilizadas
 
-JavaScript (Node.js)
-Git
-GitHub
-Visual Studio Code
-Terminal / CLI
+- JavaScript (Node.js)
+- Git
+- GitHub
+- Visual Studio Code
+- Terminal / CLI
 
 # Funcionalidades
 

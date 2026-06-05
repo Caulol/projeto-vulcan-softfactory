@@ -13,7 +13,7 @@ O objetivo é monitorar informações críticas do robô, como velocidade operac
 
 O sistema foi dividido em módulos independentes para reproduzir um ambiente corporativo de desenvolvimento colaborativo utilizando Git e GitHub.
 
-#Escopo do Robô Industrial
+# Escopo do Robô Industrial
 
 O robô executa operações automatizadas de montagem e possui:
 - Controle de velocidade do braço robótico;
@@ -22,26 +22,52 @@ O robô executa operações automatizadas de montagem e possui:
 - Sistema de recomendação de resfriamento.
 
 # Tecnologias, Linguagens e Ferramentas Utilizadas
+
 JavaScript (Node.js)
 Git
 GitHub
 Visual Studio Code
 Terminal / CLI
-Funcionalidades
-Módulo Motor
-Recebe velocidade atual e aceleração;
-Calcula velocidade final;
-Informa se o sistema está seguro ou em sobrecarga.
-Módulo Sensores
-Recebe 5 leituras de temperatura;
-Calcula a média térmica utilizando laço for;
-Determina se o sistema de resfriamento deve ser ativado.
-Aplicação Principal
-Importa os módulos utilizando require;
-Executa testes de funcionamento;
-Exibe um painel de telemetria no terminal.
 
+# Funcionalidades
 
+Módulo Motor:
+- Recebe velocidade atual e aceleração;
+- Calcula velocidade final;
+- Informa se o sistema está seguro ou em sobrecarga.
+
+Módulo Sensores:
+- Recebe 5 leituras de temperatura;
+- Calcula a média térmica utilizando laço for;
+- Determina se o sistema de resfriamento deve ser ativado.
+
+Aplicação Principal:
+- Importa os módulos utilizando require;
+- Executa testes de funcionamento;
+- Exibe um painel de telemetria no terminal.
+
+# Execução
+
+Instale o Node.js e execute:
+
+node app.js
+# Exemplo de Saída
+
+=================================
+      PAINEL DE TELEMETRIA
+=================================
+
+[MOTOR]
+Velocidade Final: 110
+Status: ALERTA DE SOBRECARGA
+
+[SENSORES TÉRMICOS]
+Média de Temperatura: 71.60°C
+Ação: Ligar sistema de resfriamento
+
+=================================
+Fim do Relatório
+=================================
 
 
 

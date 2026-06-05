@@ -15,7 +15,3 @@ function verificarTemperatura(leituras) {
 }
 
 module.exports = verificarTemperatura;
-
-console.log(
-    verificarTemperatura([68, 72, 74, 71, 75])
-);

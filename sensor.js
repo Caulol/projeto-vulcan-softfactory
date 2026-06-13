@@ -1,15 +1,15 @@
-function verificarTemperatura(leituras) {
+function verificarTemperatura(leituras){
     let soma = 0;
 
-    for (let i = 0; i < leituras.length; i++) {
-        soma += leituras[i];
+    for(let l of leituras){
+        soma += l;
     }
 
     const media = soma / leituras.length;
 
-    if (media > 70) {
+    if(media > 70){
         return `Média térmica: ${media.toFixed(2)}°C - LIGAR RESFRIAMENTO`;
-    } else {
+    }else{
         return `Média térmica: ${media.toFixed(2)}°C - Sistema térmico estável`;
     }
 }
